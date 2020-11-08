@@ -1,24 +1,17 @@
-# README
+# Awesome Lists
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Requirements
+Ruby 2.7.1, PostgreSQL
 
-Things you may want to cover:
+### Setup
+1. Create .env file from template:
+`cp .env.example .env`
+2. [Create personal access token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) and put it into `.env`
+3. Put PostgreSQL params into `.env`
+4. ```rake db:setup```
 
-* Ruby version
+### Usage
+Go to `/new` and insert category, technology and github path in `owner/repo` format
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Run tests
+Just run `rspec`
