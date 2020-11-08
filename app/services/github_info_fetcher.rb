@@ -1,4 +1,4 @@
-class GithubService
+class GithubInfoFetcher
   RepoInfoQuery = Github::Client.parse <<-'GRAPHQL'
     query($owner: String!, $name: String!) {
       repository(owner: $owner, name: $name) {

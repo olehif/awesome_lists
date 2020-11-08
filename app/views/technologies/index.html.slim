@@ -1,0 +1,6 @@
+- @technologies.each do |technology|
+  .name
+    | Name:
+    = technology.name
+  .categories= link_to 'Categories list', technology_path(name: technology.name)
+  hr

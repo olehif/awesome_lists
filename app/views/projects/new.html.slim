@@ -1,0 +1,11 @@
+= simple_form_for @project do |f|
+  = label_tag :github_path
+  = f.text_field :github_path
+  br
+  = label_tag :category
+  = text_field_tag :category
+  br
+  = label_tag :technology
+  = text_field_tag :technology
+  br
+  = f.button :submit

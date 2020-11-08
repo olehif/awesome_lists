@@ -14,8 +14,13 @@ gem 'ruby'
 gem 'graphql-client'
 gem 'pg'
 gem 'graphql-client'
+gem 'slim'
+gem 'simple_form'
 
 group :development, :test do
+  gem 'factory_bot_rails'
+  gem 'rspec-rails'
+  gem 'rails-controller-testing'
   gem 'dotenv-rails'
   gem 'pry'
 end
@@ -31,6 +36,5 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   gem 'webdrivers'
-  gem 'rspec'
 end
 

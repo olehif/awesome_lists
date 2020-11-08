@@ -1,0 +1,19 @@
+.
+  | Category name:
+  = @category.name
+
+
+. Projects:
+br
+- @projects.map { |p| ProjectInfoPresenter.new(p) }.each do |project|
+  .title
+    = "#{project.github_path} (stars: #{project.star_count}, forks: #{project.fork_count})"
+  .last_commit
+    = "last commit #{time_ago_in_words(project.last_commit_time)} ago"
+  .description
+    = project.description
+  .license
+    | License:
+    = " #{project.license_name}"
+  .
+  br
